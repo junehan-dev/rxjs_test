@@ -4,8 +4,10 @@
   "description": "Test rxjs and loadsh integration",
   "main": "index.js",
   "scripts": {
-    "eslint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "eslint": "eslint ./srcs --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc ./srcs/*.ts",
+    "clean": "rm ./srcs/*.js ./srcs/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,8 @@
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
     "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "prettier": "^2.2.1",
     "typescript": "^4.2.3"
   }
 }

@@ -1,0 +1,1 @@
+let myStr: String = "myData";
